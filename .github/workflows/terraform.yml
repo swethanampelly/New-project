@@ -22,13 +22,13 @@ jobs:
       uses: harshicorp/setup-terraform@v3
 
     - name: initaiate terraform
-      uses: terraform init
+      run: terraform init
 
     - name: terraform format
-      uses: terraform fmt
+      run: terraform fmt
 
     - name: terraform validate
-      uses: terraform validate
+      run: terraform validate
 
     - name: terraform apply
-      uses: terraform apply -auto-approve
+      run: terraform apply -auto-approve
